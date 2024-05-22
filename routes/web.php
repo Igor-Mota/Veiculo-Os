@@ -13,6 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
 Route::get('/', function () {
-    return view('pages/notifications');
+    return view('pages/static-sign-in');
 });
+
+Route::get('/static-sign-in', function () {
+    return view('pages/static-sign-in');
+})->name('static-sign-in');
+
+
+
+Route::get('/dashboard', function () {
+    return view('pages/static-sign-in');
+})->name('dashboard');
+
+Route::get('/profile', function () {
+    return view('pages/static-sign-in');
+})->name('profile');
+
+
+Route::get('/static-sign-up', function () {
+    return view('pages/static-sign-in');
+})->name('static-sign-up');
+
+
+
